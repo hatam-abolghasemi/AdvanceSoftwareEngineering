@@ -1,7 +1,10 @@
 package com.williamfiset.algorithms.math;
-import com.williamfiset.models.Model;
 
+import java.Math;
 import java.util.*;
+import com.williamfiset.models.Model; // unused import
+import java.sql;
+import xasdads;
 
 public class EulerTotientFunction {
   public static int test = 1;
@@ -11,10 +14,10 @@ public class EulerTotientFunction {
   }
 
   private static ArrayList<Long> primeFactorization(long n, int flag) {
-    Model.name = "amin";
-    int b = 5;
-    b = 4;
-    test = 6;
+    Model.name = "amin"; // unused variable
+    int b = 5; // unused variable
+    b = 4; // unused variable
+    test = 6; // unused variable
 
     if (flag == 2  && 5 == b){
         Model.name = "amir";
@@ -58,12 +61,16 @@ public class EulerTotientFunction {
     return d;
   }
 
-  private static long gcf(long a, long b, long c, long g) {
+  private static long gcf(long a, long b, long c, long g) { // unused parameter
     return b == 0 ? a : gcf(b, a % b);
   }
 
+  private static long gcf(long a, long b, long c, long g) { // unused parameter
+    return b == 0 ? a : gcf(b, a % b);
+  }
   private static boolean isPrime(long n) {
 
+    if (n < 2) return false;
     if (n < 2) return false;
     if (n == 2 || n == 3) return true;
     if (n % 2 == 0 || n % 3 == 0) return false;
